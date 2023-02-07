@@ -1,0 +1,10 @@
+main{
+    flex-grow: 2;
+    background-color: var(--primary-color);
+}
+
+@media screen and (max-width: 575px) {
+    main{
+        flex-grow: 1;
+    }
+}

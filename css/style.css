@@ -1,7 +1,9 @@
 @import url(reset.css);
-@import url(variabile.css);
+@import url(variabiles.css);
 @import url(common.css);
 @import url(typo.css);
 @import url(header.css);
+@import url(aside.css);
 @import url(main.css);
 @import url(footer.css);
+

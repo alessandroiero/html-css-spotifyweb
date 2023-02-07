@@ -1,0 +1,114 @@
+aside {
+    min-width: 15%;
+    background-color: var(--black);
+    flex-direction: column;
+    height: calc(100% - 80px);
+    overflow: auto;
+}
+
+aside .top-aside,
+aside .bottom {
+    padding: 15px;
+}
+
+aside .icon {
+    width: 30px;
+}
+
+aside .logo-box {
+    width: 35%;
+}
+
+aside .logo-box img {
+    width: 10.375rem;
+    padding-right: 5px;
+}
+
+aside .box-profile img {
+    border-radius: 50%;
+    background-color: var(--grey);
+}
+
+aside .create-playlist {
+    color: var(--white);
+}
+
+aside .create-playlist button {
+    background-color: var(--grey);
+    font-size: 1.875rem;
+    padding: 5px 10px;
+    font-weight: bolder;
+}
+
+aside span {
+    color: var(--grey);
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8125rem;
+    padding-left: 2px;
+}
+
+aside li {
+    font-weight: 400;
+    color: var(--grey);
+    margin: 1.25rem 0;
+    font-size: .8125rem;
+}
+
+aside .box-nav{
+    overflow: auto;
+}
+
+aside .bottom .download .icon {
+    margin: 10px 5px 0 0;
+    padding: 10px 0;
+}
+
+aside .bottom .personal .icon {
+    margin: 10px 15px 0 0;
+}
+
+aside .bottom .personal span {
+    color: white;
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+aside .hr-full {
+    padding: 0 50px;
+}
+
+aside .secondo-logo-box {
+    display: none;
+}
+
+@media screen and (max-width: 575px) {
+
+    aside span,
+    aside .top-aside .logo-box,
+    aside li,
+    aside .playlist,
+    aside .hr-full {
+        display: none;
+    }
+
+    aside .secondo-logo-box {
+        display: block;
+    }
+
+    aside .top-aside img,
+    aside .bottom img {
+        width: 100%;
+    }
+
+    aside {
+        width: 10%;
+    }
+
+    aside .box-home {
+        margin: 0 0 20px 0;
+    }
+
+    aside .icon {
+        margin: 5px 0;
+    }
+}

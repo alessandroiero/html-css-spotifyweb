@@ -14,18 +14,89 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <!-- /Font Awesome -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <title>Spotify Web</title>
     <!-- Css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="container">
-        <aside></aside>
+
+    <div id="screen-app" class="container d-flex row">
+        <!-- Aside -->
+        <aside class="aside d-flex jc-spbetween">
+            <!-- Parte Superiore -->
+            <div class="top-aside">
+
+                <div class="logo-box">
+                    <img src="img/logo.svg" alt="logo spotify">
+                </div>
+                <div class="secondo-logo-box">
+                    <img src="img/logo-small.svg" alt="logo small">
+                </div>
+                <!--/Parte Superiore -->
+                <!-- Parte Centrale -->
+                <div class="box-home mt-30 ">
+                    <div class="home-icon d-flex a-center">
+                        <img class='icon' src="img/home.svg" alt="logo home">
+                        <span>Home</span>
+                    </div>
+                    <div class="research-icon d-flex a-center">
+                        <img class='icon' src="img/search.svg" alt="logo search">
+                        <span>Cerca</span>
+                    </div>
+                    <div class="librery-icon d-flex a-center">
+                        <img class='icon' src="img/libreria.svg" alt="logo libreria">
+                        <span>La tua Libreria</span>
+                    </div>
+                </div>
+                <div class="playlist">
+                    <div class="create-playlist">
+                        <h3>PLAYLIST</h3>
+                        <button class="create btn mt-20">+</button>
+                        <span> Crea Playlist</span>
+                    </div>
+                    <nav class="box-nav">
+                        <ul class="list-playlist">
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- /Parte Centrale -->
+            <!-- Parte Inferiore -->
+            <div class="bottom">
+                <div class="profile ">
+                    <div class="download d-flex a-center">
+                        <img class='icon' src="img/download.svg" alt="download logo">
+                        <span>Installa App</span>
+                    </div>
+                    <hr class="hr-full">
+                    <div class="personal d-flex a-center">
+                        <div class="box-profile">
+                            <img class='icon' src="img/profile.svg" alt="logo profilo">
+                        </div>
+                        <span>John Doe</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Parte Inferiore -->
+        </aside>
+        <!-- /Aside -->
+
         <main>
-            <section></section>
+            <section>
+
+            </section>
         </main>
-        <footer></footer>
+        <footer>
+        </footer>
     </div>
 </body>
 
