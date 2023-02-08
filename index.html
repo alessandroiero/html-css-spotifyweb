@@ -24,10 +24,9 @@
 
     <div id="screen-app" class="container d-flex row">
         <!-- Aside -->
-        <aside class="aside d-flex jc-spbetween">
+        <aside class="aside d-flex jc-spbetween padding">
             <!-- Parte Superiore -->
             <div class="top-aside">
-
                 <div class="logo-box">
                     <img src="img/logo.svg" alt="logo spotify">
                 </div>
@@ -36,37 +35,38 @@
                 </div>
                 <!--/Parte Superiore -->
                 <!-- Parte Centrale -->
-                <div class="box-home mt-30 ">
-                    <div class="home-icon d-flex a-center">
-                        <img class='icon' src="img/home.svg" alt="logo home">
-                        <span>Home</span>
+                <div class="center-aside">
+                    <div class="box-home mt-30 ">
+                        <div class="home-icon d-flex a-center">
+                            <svg class="icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="#ffffff"/></svg>
+                            <span>Home</span>
+                        </div>
+                        <div class="research-icon d-flex a-center">
+                            <svg class="icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="#6d6d6d" fill-rule="evenodd"/></svg>                            <span>Cerca</span>
+                        </div>
+                        <div class="librery-icon d-flex a-center">
+                            <svg class="icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="#6d6d6d"/></svg>                            
+                            <span>La tua Libreria</span>
+                        </div>
                     </div>
-                    <div class="research-icon d-flex a-center">
-                        <img class='icon' src="img/search.svg" alt="logo search">
-                        <span>Cerca</span>
+                    <div class="playlist">
+                        <div class="create-playlist">
+                            <h3>PLAYLIST</h3>
+                            <button class="create btn mt-10">+</button>
+                            <span> Crea Playlist</span>
+                        </div>
+                        <div class="box-nav">
+                            <ul class="list-playlist">
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="librery-icon d-flex a-center">
-                        <img class='icon' src="img/libreria.svg" alt="logo libreria">
-                        <span>La tua Libreria</span>
-                    </div>
-                </div>
-                <div class="playlist">
-                    <div class="create-playlist">
-                        <h3>PLAYLIST</h3>
-                        <button class="create btn mt-20">+</button>
-                        <span> Crea Playlist</span>
-                    </div>
-                    <nav class="box-nav">
-                        <ul class="list-playlist">
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                        </ul>
-                    </nav>
                 </div>
             </div>
             <!-- /Parte Centrale -->
@@ -82,7 +82,7 @@
                         <div class="box-profile">
                             <img class='icon' src="img/profile.svg" alt="logo profilo">
                         </div>
-                        <span>John Doe</span>
+                        <span class="name">Alessandro Iero</span>
                     </div>
                 </div>
             </div>
@@ -92,12 +92,78 @@
 
         <main>
             <section>
-
+                
             </section>
         </main>
-        <footer>
-        </footer>
     </div>
+
+    <!-- Footer -->
+    <footer class=" d-flex jc-spbetween">
+        <!-- footer left -->
+        <div class="footer-left">
+            <div class="box-image d-flex a-center">
+                <div class="img">
+                    <img src="img/sinister.jpeg" alt="logo brano">
+                </div>
+                <div class="nome-brano">
+                    <h4>Sinister</h4>
+                    <p>Brano Nome</p>
+                </div>
+                <div class="icon-box d-flex">
+                    <button class="btn footer">
+                        <i class="icon fa-regular fa-heart"></i>
+                    </button>
+                    <button class="btn footer">
+                        <i class="icon fa-regular fa-folder"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- /footer left -->
+        <!-- footer center -->
+        <div class="footer-center a-center">
+            <!-- Parte superiore -->
+            <div class="top-col">
+                <i class="icon small fas fa-random"></i>
+                <i class="icon small fas fa-step-backward"></i>
+                <i class="icon center far fa-play-circle"></i>
+                <i class="icon small fas fa-step-forward"></i>
+                <i class="icon small fas fa-redo-alt"></i>
+            </div>
+            <!-- /Parte superiore -->
+            <!-- Parte Inferiore -->
+            <div class="bottom-col d-flex">
+                <span>0:25</span>
+                <div class="song-container d-flex">
+                    <div class="grey"></div>
+                    <div class="black"></div>
+                </div>
+                <span>4:35</span>
+            </div>
+            <!-- /Parte Inferiore -->
+        </div>
+        <!-- /footer center -->
+        <!-- footer right -->
+        <div class="footer-right a-center d-flex">
+            <!-- Parte sinistra -->
+            <div class="left-col">
+                <i class="icon white fas fa-bars"></i>
+                <i class="icon white fas fa-desktop"></i>
+                <i class="icon white fas fa-volume-up"></i>
+            </div>
+            <!-- /Parte sinistra -->
+            <!-- Parte destra -->
+            <div class="right-col d-flex">
+                <div class="song-container d-flex">
+                    <div class="grey"></div>
+                    <div class="black"></div>
+                </div>
+            </div>
+            <!-- Parte destra -->
+        </div>
+        <!-- /footer right -->
+    </footer>
+    <!-- /Footer -->
 </body>
 
 </html>

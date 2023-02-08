@@ -7,3 +7,14 @@
 @import url(main.css);
 @import url(footer.css);
 
+body{
+     background-color: var(--primary-color);
+     height: 100vh;
+}
+
+#screen-app{
+    min-height: 100px; 
+    height: calc(100% - 80px); 
+    overflow: auto; 
+}
+
