@@ -13,40 +13,39 @@ aside span {
     font-size: .8125rem;
     padding-left: 5px;
 }
-
+aside span:hover{
+    cursor: pointer;
+}
 aside .icon {
     width: 30px;
 }
 
-aside .logo-box {
-    width: 35%;
-}
-
-aside .logo-box img {
-    width: 7.875rem;
-    padding-right: 5px;
-}
-
 aside .box-profile img {
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background-color: var(--grey);
 }
 
-aside .secondo-logo-box {
-    display: none;
+aside .box-home{
+    padding-top: 60px;
 }
 
 /* Superiore */
-aside .box-home>div{
+aside .box-home>li{
     margin: 5px 0;
 }
-aside .home-icon span {
-    color: var(--white);
-}
-aside .logo-box{
-    margin-top: 1.25rem;
+aside .box-home a{
+    display: flex;
+    align-items: center;
 }
 
+aside .white span{
+    color: var(--white);
+}
+aside .secondo-logo-box{
+    display: none;
+}
 /* Center */
 aside .center-aside .box-home div {
     margin-top: 10px;
@@ -78,7 +77,7 @@ aside .create-playlist h3 {
     font-size: .875rem;
 }
 
-aside li {
+aside .playlist li {
     font-weight: 400;
     color: var(--grey);
     margin: .9375rem 0;
@@ -106,8 +105,11 @@ aside .bottom .download .icon span {
     margin: 10px 5px 0 0;
 }
 
+aside .bottom .personal {
+    margin: 10px 5px 0 0;
+}
 aside .bottom .personal .icon {
-    margin: 10px 3px 0 0;
+    margin: 0 5px 0 0;
 }
 
 aside .bottom .personal span {
@@ -135,16 +137,17 @@ aside .hr-full {
     aside .hr-full {
         display: none;
     }
-
     aside .secondo-logo-box {
         display: block;
     }
-
+    aside .box-home{
+        padding-top: 20px;
+        align-items: center;
+    }
     aside {
         justify-content: center;
     }
 
-    aside .top-aside img,
     aside .bottom img {
         width: 100%;
     }

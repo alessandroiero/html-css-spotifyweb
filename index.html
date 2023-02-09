@@ -25,39 +25,47 @@
     <div id="screen-app" class="container d-flex row">
         <!-- Aside -->
         <aside class="d-flex aside d-flex padding">
-            <!-- Parte Superiore -->
-            <div class="logo-box">
-                <img src="img/logo.svg" alt="logo spotify">
-            </div>
-            <div class="secondo-logo-box">
-                <img src="img/logo-small.svg" alt="logo small">
-            </div>
+            <!-- Parte Superiore -->                
 
-            <div class="box-home mt-30 ">
-                <div class="home-icon d-flex a-center">
-                    <svg class="icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z"
-                            fill="#ffffff" />
-                    </svg>
-                    <span>Home</span>
+            <nav class="box-home mt-30">
+                <div class="secondo-logo-box">
+                    <img src="img/logo-small.svg" alt="logo small">
                 </div>
-                <div class="research-icon d-flex a-center">
-                    <svg class="icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z"
-                            fill="#6d6d6d" fill-rule="evenodd" />
-                    </svg> <span>Cerca</span>
-                </div>
-                <div class="librery-icon d-flex a-center">
-                    <svg class="icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z"
-                            fill="#6d6d6d" />
-                    </svg>
-                    <span>La tua Libreria</span>
-                </div>
-            </div>
+                <ul class="d-flex flex-dir-column">
+                    <li class="home-icon d-flex a-center white">
+                        <span class="green"></span>
+                        <a href="#">
+                            <svg class="icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z"
+                                    fill="#ffffff" />
+                            </svg> 
+                            <span class="text">Home</span>
+                        </a>
+                    </li>
+                    <li class="home-icon d-flex a-center">
+                        <a href="#">
+                            <svg class="icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z"
+                                    fill="#717171" fill-rule="evenodd" />
+                            </svg>
+                            <span class="text">Cerca</span>
+                        </a>
+                    </li>
+                    <li class="home-icon d-flex a-center">
+                        <a href="#">
+                            <svg class="icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z"
+                                    fill="#717171" />
+                            </svg>
+                            <span class="text">La tua libreria</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /Parte Superiore -->
 
             <!-- Parte Centrale -->
             <div class="playlist">
@@ -67,12 +75,12 @@
                     <span> Crea Playlist</span>
                 </div>
                 <ul class="list-playlist">
-                    <li><a href="#">Nome playlist</a></li>
-                    <li><a href="#">Nome playlist</a></li>
-                    <li><a href="#">Nome playlist</a></li>
-                    <li><a href="#">Nome playlist</a></li>
-                    <li><a href="#">Nome playlist</a></li>
-                    <li><a href="#">Nome playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
                 </ul>
             </div>
             <!-- /Parte Centrale -->
@@ -99,6 +107,9 @@
         <main>
             <!-- Section Header -->
             <section id="header-section" class="d-flex">
+                <div class="logo-box">
+                    <img src="img/logo.svg" alt="logo spotify">
+                </div>
                 <button class="btn">EFFETTUA L'UPGRADE</button>
             </section>
             <!-- /Section header -->
@@ -110,7 +121,7 @@
                     <li><a href="">CLASSIFICHE</a></li>
                     <li><a href="">GENERI E MOOD</a></li>
                     <li><a href="">NUOVE USCITE</a></li>
-                    <li><a href="">IN SCOPRI</a></li>
+                    <li><a href="">SCOPRI</a></li>
                 </ul>
             </nav>
             <!-- Nav -->
@@ -121,6 +132,9 @@
                     <div class="row">
                         <div class="card">
                             <div class="box">
+                                <div class="opacity-btn">
+                                    <i class="icon fa-regular fa-circle-play"></i>
+                                </div>
                                 <img src="img/metal_lifting.jpg" alt="metal">
                             </div>
                             <h3>Heavy Metal</h3>
@@ -128,6 +142,9 @@
                         </div>
                         <div class="card">
                             <div class="box">
+                                <div class="opacity-btn">
+                                    <i class="icon fa-regular fa-circle-play"></i>
+                                </div>
                                 <img src="img/stranger.jpeg" alt="stranger">
                             </div>
                             <h3>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
@@ -135,6 +152,9 @@
                         </div>
                         <div class="card">
                             <div class="box">
+                                <div class="opacity-btn">
+                                    <i class="icon fa-regular fa-circle-play"></i>
+                                </div>
                                 <img src="img/aquietplace.jpeg" alt="aquietplace">
                             </div>
                             <h3>A quiet place</h3>
@@ -142,6 +162,9 @@
                         </div>
                         <div class="card">
                             <div class="box">
+                                <div class="opacity-btn">
+                                    <i class="icon fa-regular fa-circle-play"></i>
+                                </div>
                                 <img src="img/split.jpeg" alt="split">
                             </div>
                             <h3>Split</h3>
@@ -149,6 +172,9 @@
                         </div>
                         <div class="card">
                             <div class="box">
+                                <div class="opacity-btn">
+                                    <i class="icon fa-regular fa-circle-play"></i>
+                                </div>
                                 <img src="img/cure.jpeg" alt="cure">
                             </div>
                             <h3>A cure for wellness</h3>
@@ -156,6 +182,9 @@
                         </div>
                         <div class="card">
                             <div class="box">
+                                <div class="opacity-btn">
+                                    <i class="icon fa-regular fa-circle-play"></i>
+                                </div>
                                 <img src="img/sinister.jpeg" alt="sinister">
                             </div>
                             <h3>Sinister</h3>
@@ -173,12 +202,18 @@
                     <div class="row">
                         <div class="card">
                             <div class="box">
+                                <div class="opacity-btn">
+                                    <i class="icon fa-regular fa-circle-play"></i>
+                                </div>
                                 <img src="img/radar.jpeg" alt="metal">
                             </div>
                             <h3>Release Radar</h3>
                         </div>
                         <div class="card">
                             <div class="box">
+                                <div class="opacity-btn">
+                                    <i class="icon fa-regular fa-circle-play"></i>
+                                </div>
                                 <img src="img/mixdaily.jpeg" alt="metal">
                             </div>
                             <h3>Daily Mix 1</h3>
@@ -195,12 +230,18 @@
                     <div class="row">
                         <div class="card">
                             <div class="box border-radius-img">
+                                <div class="opacity-btn">
+                                    <i class="icon fa-regular fa-circle-play"></i>
+                                </div>
                                 <img src="img/youg.jpeg" alt="metal">
                             </div>
                             <h3>Youg</h3>
                         </div>
                         <div class="card">
                             <div class="box border-radius-img">
+                                <div class="opacity-btn">
+                                    <i class="icon fa-regular fa-circle-play"></i>
+                                </div>
                                 <img src="img/einaudi.jpeg" alt="metal">
                             </div>
                             <h3>Einaudi</h3>
@@ -250,7 +291,7 @@
             <!-- /Parte superiore -->
             <!-- Parte Inferiore -->
             <div class="bottom-col d-flex jc-spbetween">
-                <span>0:25</span>
+                <span class="player">0:25</span>
                 <div class="song-container d-flex">
                     <div class="grey"></div>
                     <div class="black"></div>

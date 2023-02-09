@@ -7,15 +7,198 @@
 @import url(main.css);
 @import url(footer.css);
 
-body{
-     background-color: var(--primary-color);
-     height: 100vh;
-     min-width: 23.4375rem;
+body {
+    background-color: var(--primary-color);
+    height: 100vh;
+    min-width: 23.4375rem;
 }
 
-#screen-app{
-    min-height: 100px; 
-    height: calc(100vh - 80px); 
-    overflow:hidden;
+#screen-app {
+    min-height: 100px;
+    height: calc(100vh - 80px);
+    overflow: hidden;
 }
 
+/* ---------------------------------Effetti--------------------------------- */
+
+#header-section .btn:hover {
+    transform: scale(1.1);
+}
+
+a:hover {
+    color: var(--white);
+}
+
+main #category a:hover,
+aside span:hover {
+    color: var(--white);
+}
+
+aside .create-playlist:hover {
+    color: var(--white);
+}
+
+aside .btn:hover {
+    background-color: var(--white);
+}
+
+footer .icon:hover {
+    color: var(--white);
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+.box-home .white {
+    position: relative;
+}
+
+main nav ul li:first-child {
+    position: relative;
+}
+
+/* Barre verdi */
+/* main */
+main nav ul li:first-child::after {
+    content: ' ';
+    position: absolute;
+    bottom: -10px;
+    background-color: var(--green);
+    left: 25px;
+    width: 0;
+}
+
+main nav ul li:first-child::after {
+    height: 3px;
+}
+
+main nav ul li:first-child::after {
+    width: 50%;
+}
+
+/* Aside */
+.box-home .white .green {
+    height: 30px;
+}
+
+.box-home .white .green {
+    position: absolute;
+    bottom: 2px;
+    background-color: var(--green);
+    left: -17px;
+    width: 0;
+}
+
+/* Main */
+main .box{
+    position: relative;
+}
+main .box:hover{
+    cursor: pointer;
+}
+
+main .opacity-btn{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.644);
+    display: none;
+}
+
+main .opacity-btn>.icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: var(--white);
+}
+main .box:hover .opacity-btn{
+    display: block;
+}
+main #popular-artists .opacity-btn{
+    border-radius: 50%;
+}
+/* Footer */
+footer .nome-brano p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--white);
+}
+
+.footer-center .icon.center:hover{
+    font-size: 26px;
+}
+
+.footer-right .song-container .grey{
+    position: relative;
+}
+
+.footer-right .song-container .grey::after {
+    content: ' ';
+    position: absolute;
+    bottom: -3px;
+    background-color: var(--white);
+    left: 100%;
+    width: 0;
+}
+
+.footer-right .song-container .grey:hover::after {
+    height: 10px;
+    border-radius: 50%;
+}
+
+.footer-right .song-container .grey::after {
+    width: 10px;
+}
+.footer-center .song-container .grey:hover,
+.footer-right .song-container .grey:hover{
+    background-color: var(--green);
+    cursor: pointer;
+}
+
+footer .bottom-col .song-container{
+    position: relative;
+}
+
+footer .bottom-col .song-container::after {
+    content: ' ';
+    position: absolute;
+    bottom: 0px;
+    background-color: var(--white);
+    left: 20%;
+    width: 0;
+}
+
+footer .bottom-col .song-container:hover::after {
+    height: 15px;
+    border-radius: 50%;
+}
+
+footer .bottom-col .song-container::after {
+    width: 15px;
+}
+
+
+/* ---------------------------------/Effetti--------------------------------- */
+/* Scrollbar */
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--green) var(--white);
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.244);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--green);
+    border-radius: 20px;
+  };
