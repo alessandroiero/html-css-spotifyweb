@@ -4,6 +4,9 @@
 
 .row{
     display: flex;
+}
+.wrap{
+    display: flex;
     flex-wrap: wrap;
 }
 
@@ -13,10 +16,12 @@ li{
 
 a{
     text-decoration: none;
+    color: var(--grey);
 }
 
 img{
     width: 100%;
+    display: block;
 }
 
 .padding{
@@ -36,16 +41,20 @@ img{
 .a-center{
     align-items: center;
 }
-
+.flex-dir-column {
+    flex-direction: column;
+}
 .jc-spbetween{
     justify-content: space-between;
+}
+
+.jc-sparound{
+    justify-content: space-around;
 }
 
 .btn {
     cursor: pointer;
     font-family: inherit;
-    /* padding: 5px 12px; */
-    /* font-size: 1rem; */
     border: none;
 }
 

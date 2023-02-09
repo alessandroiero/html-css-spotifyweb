@@ -10,10 +10,12 @@
 body{
      background-color: var(--primary-color);
      height: 100vh;
+     min-width: 23.4375rem;
 }
 
 #screen-app{
     min-height: 100px; 
-    height: calc(100% - 80px); 
+    height: calc(100vh - 80px); 
+    overflow:hidden;
 }
 
