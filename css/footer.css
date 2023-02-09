@@ -77,7 +77,7 @@ footer .icon-box>* {
 }
 
 .footer-center .bottom-col .song-container {
-    width: 300px;
+    width: 400px;
     align-items: center;
     padding: 0 1.875rem;
 }
@@ -121,13 +121,8 @@ footer .icon-box>* {
     border-radius: 50px;
 }
 
-
-/* DESKTOP */
-@media screen and (max-width: 878px) {
-
-    .footer-center .bottom-col .song-container {
-        width: 250px;
-    }
+.footer-center .bottom-col .song-container {
+    width: 250px;
 }
 /* TABLET */
 @media screen and (max-width: 878px) {

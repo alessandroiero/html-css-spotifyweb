@@ -1,6 +1,7 @@
 /* General */
 aside {
     max-width: 250px;
+    min-width: 150px;
     width: 200px;
     background-color: var(--black);
     flex-direction: column;
@@ -60,8 +61,8 @@ aside .top-aside {
 
 aside .box-nav{
     overflow-y: auto;
-    flex-grow: 1;
-    min-height: 150px;
+    max-height: 250px;
+    min-height: 100px;
 }
 
 aside .create-playlist button {
@@ -117,7 +118,7 @@ aside .hr-full {
 
 
 /* Mobile */
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 552px) {
 
     aside span,
     aside .top-aside .logo-box,

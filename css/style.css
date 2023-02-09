@@ -15,6 +15,5 @@ body{
 #screen-app{
     min-height: 100px; 
     height: calc(100% - 80px); 
-    overflow: auto; 
 }
 

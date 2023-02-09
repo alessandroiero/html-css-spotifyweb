@@ -1,10 +1,109 @@
-main{
-    flex-grow: 2;
+main {
+    width: calc(100% - 230px);
+    height: 100%;
     background-color: var(--primary-color);
+    overflow: auto;
+}
+/* Header Section */
+#header-section{
+    top: 0;
+    right: 20px;
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    justify-content: flex-end;
+}
+#header-section .btn{
+    padding: 15px 40px;
+    background-color: black;
+    border-radius: 30px;
+    color: white;
+    border: 1px solid white;
+}
+/* /Header Section */
+main #category ul{
+    width: 100%;
+    justify-content: center;
+    padding: 100px 0 0 0;
+    font-size: .8125rem;
+    gap: 25px;
+}
+/* Nav */
+main #category a{
+    color: var(--grey);
+}
+/* /Nav */
+
+/* Section Recently-played */
+main img{
+    width: 100%;
+}
+main h2, main h3{
+    color: var(--white);
+    padding: 0 10px;
+}
+main h3, main .row p{
+    text-align: center;
+}
+main h3{
+    margin-top: .9375rem;
+}
+main .row{
+    margin-top: 1.25rem;
+}
+main section:not(:first-child){
+    margin-top: 2.125rem;
+}
+main p{
+    color: var(--grey);
+    padding: 10px 10px;
+}
+main .card{
+    width: 15%;
+    padding: 10px 8px;
+    aspect-ratio: 1;
+    max-width: 400px;
+    min-width: 150px;
 }
 
-@media screen and (max-width: 575px) {
-    main{
+main .card .border-radius-img img{
+    border-radius: 50%;
+}
+
+/* /Section Recently-played */
+
+
+/* Desktop */
+@media screen and (max-width: 878px) {
+    main {
         flex-grow: 1;
+    }
+    main .card{
+        width: 20%;
+    }
+}
+/* Tablet */
+@media screen and (max-width: 640px) {
+    main {
+        flex-grow: 1;
+    }
+    main .card{
+        width: 45%;
+    }
+    main .row{
+        justify-content: center;
+    }
+}
+/* Mobile */
+@media screen and (max-width: 552px) {
+    main {
+        flex-grow: 1;
+    }
+    main .card{
+        width: 45%;
+    }
+    main .row{
+        justify-content: center;
     }
 }
