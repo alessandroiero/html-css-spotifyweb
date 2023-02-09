@@ -131,7 +131,6 @@ aside .hr-full {
 
     aside span,
     .logo-box img,
-    aside .top-aside .logo-box,
     aside li,
     aside .playlist,
     aside .hr-full {
@@ -139,6 +138,7 @@ aside .hr-full {
     }
     aside .secondo-logo-box {
         display: block;
+        padding-bottom: .3125rem;
     }
     aside .box-home{
         padding-top: 20px;
@@ -147,11 +147,28 @@ aside .hr-full {
     aside {
         justify-content: center;
     }
-
+    aside img{
+        display: block;
+    }
     aside .bottom img {
         width: 100%;
     }
-
+    aside .bottom .download .icon {
+        width: 100%;
+    }
+    aside .download .icon{
+        width: 100%;
+    }
+    aside .icon{
+        width: 100%;
+    }
+    aside .bottom .personal {
+        margin: 0;
+    }
+    aside .download{
+        width: 60%;
+        margin: 0 auto;
+    }
     aside {
         width: 5vw;
         min-width: 2%;
